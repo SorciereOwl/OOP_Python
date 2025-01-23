@@ -1,0 +1,21 @@
+def max_consecutive_equal():
+    max_count = 0  
+    current_count = 0  
+    previous_number = None 
+    while True:
+        number = int(input("Enter a natural number (0 to complete): "))
+        if number == 0:
+            break  
+
+        if number == previous_number:
+            current_count += 1 
+        else:
+            current_count = 1  
+        
+        previous_number = number  
+
+        if current_count > max_count:
+            max_count = current_count  
+
+    print("The largest number of consecutive equal elements: ", max_count)
+max_consecutive_equal()
