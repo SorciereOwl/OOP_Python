@@ -1,0 +1,7 @@
+def count_words(sentence):
+    words = sentence[:-1].split()
+    return len(words)
+
+input_sentence = "some string"
+word_count = count_words(input_sentence)
+print(f"Количество слов: {word_count}")
